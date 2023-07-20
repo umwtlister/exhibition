@@ -248,7 +248,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/"..path:gsub("rise/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/umwtlister/exhibition/main/"..path:gsub("rise/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -261,7 +261,7 @@ end
 
 local teleportfunc = game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
-		local teleportstr = 'shared.VapeSwitchServers = true if shared.VapeDeveloper then loadstring(readfile("rise/main.lua"))() else loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/RiseForRoblox/main/main.lua", true))() end'
+		local teleportstr = 'shared.VapeSwitchServers = true if shared.VapeDeveloper then loadstring(readfile("rise/main.lua"))() else loadstring(game:HttpGet("https://raw.githubusercontent.com/umwtlister/exhibition/main/main.lua", true))() end'
 		if shared.VapeDeveloper then
 			teleportstr = 'shared.VapeDeveloper = true '..teleportstr
 		end
@@ -688,7 +688,7 @@ end
 
 
 local risetext = Instance.new("TextLabel")
-risetext.Text = "Rise"
+risetext.Text = "Kuro"
 risetext.Font = Enum.Font.TitilliumWeb
 risetext.TextSize = 53
 risetext.TextColor3 = Color3.new(1, 1, 1)
@@ -710,7 +710,7 @@ risegradient.Parent = risetext
 local risetextversion = risetext:Clone()
 local risetextcustom = risetext:Clone()
 risetextversion.TextSize = 26
-risetextversion.Text = "5.94"
+risetextversion.Text = "kawa"
 risetextversion.Position = UDim2.new(0, 66, 0, 6)
 risetextversion.Parent = risetext
 risetextversion.TextLabel.TextSize = 26
